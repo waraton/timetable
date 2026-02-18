@@ -12,11 +12,10 @@
 <body>
   <header>
     <nav>
-      <button class="timetable">timetable</button>
+      <button class="timetable active">timetable</button>
       <button class="lecturers">lecturers</button>
       <button class="Activities">activities</button>
       <button class="grading">grading</button>
-      <button class="unit-score active">unit-score</button>
       <button class="fees">fees</button>
       <button class="exams">exams</button>
     </nav>
@@ -28,9 +27,9 @@
       <h1>year one 2025 2026 Tables</h1>
     </hgroup>
 
-    <section class="timetable tab">
+    <section class="timetable tab current">
       <h2>Semester Time tables</h2>
-      <h3>Semester I</h3>
+      <h3>SEMESTER I</h3>
       <table>
         <colgroup>
           <col class="col1">
@@ -55,13 +54,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>0600-0700</th>
-            <td rowspan="2" colspan="7"></td>
-          </tr>
-          <tr>
-            <th>0700-0800</th>
-          </tr>
           <tr>
             <th>0800-0900</th>
             <td rowspan="4"></td>
@@ -112,22 +104,6 @@
             <th>1600-1700</th>
             <td></td>
           </tr>
-          <tr>
-            <th>1700-1800</th>
-            <td colspan="7" rowspan="5"></td>
-          </tr>
-          <tr>
-            <th>1800-1900</th>
-          </tr>
-          <tr>
-            <th>1900-2000</th>
-          </tr>
-          <tr>
-            <th>2000-2100</th>
-          </tr>
-          <tr>
-            <th>2100-2200</th>
-          </tr>
         </tbody>
       </table>
 
@@ -159,13 +135,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>0600-0700</th>
-            <td rowspan="2" colspan="7"></td>
-          </tr>
-          <tr>
-            <th>0700-0800</th>
-          </tr>
           <tr>
             <th>0800-0900</th>
             <td rowspan="4"></td>
@@ -211,22 +180,6 @@
           <tr>
             <th>1600-1700</th>
           </tr>
-          <tr>
-            <th>1700-1800</th>
-            <td colspan="7" rowspan="5"></td>
-          </tr>
-          <tr>
-            <th>1800-1900</th>
-          </tr>
-          <tr>
-            <th>1900-2000</th>
-          </tr>
-          <tr>
-            <th>2000-2100</th>
-          </tr>
-          <tr>
-            <th>2100-2200</th>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -239,12 +192,14 @@
           <col class="col1">
           <col>
           <col>
+          <col>
         </colgroup>
         <thead>
           <tr>
             <th>Course code</th>
             <th>Course</th>
             <th>Lecturer</th>
+            <th>Course Units</th>
           </tr>
         </thead>
         <tbody>
@@ -252,6 +207,7 @@
             <td>emt 1101</td>
             <td>Engineering math 1</td>
             <td>Clara Julia Batanda(Ms.)</td>
+            <td rowspan='5'>4</td>
           </tr>
           <tr>
             <td>ele 1121</td>
@@ -269,14 +225,15 @@
             <td>Robert Ssekitoleko (Dr.), Shirley Mbabazi(Ms.)</td>
           </tr>
           <tr>
-            <td>tec 1121</td>
-            <td>Fundamentals of Engineering</td>
-            <td>Jane Namaganda Kiyimba (Dr.)</td>
-          </tr>
-          <tr>
             <td>ele 1102</td>
             <td>Physical Electronics</td>
             <td>Paul Bogere (Dr.)</td>
+          </tr>
+          <tr>
+            <td>tec 1121</td>
+            <td>Fundamentals of Engineering</td>
+            <td>Jane Namaganda Kiyimba (Dr.)</td>
+            <td rowspan='2'>3</td>
           </tr>
           <tr>
             <td>unv 1101</td>
@@ -287,6 +244,7 @@
             <td>ee labs <span class="visuallyHidden"> - room 140</span></td>
             <td>Electrical / Electronic Labs</td>
             <td>Robert Gitta (Dr.)</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -294,57 +252,58 @@
       <h3>semester II</h3>
       <table>
         <colgroup>
+          <col>
           <col class="col1">
           <col>
           <col>
         </colgroup>
         <thead>
           <tr>
+            <td>S/N</td>
             <th>Course code</th>
             <th>Course</th>
             <th>Lecturer</th>
+            <th>Course Units</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>emt 1101</td>
-            <td>Engineering math 1</td>
+            <td>1</td>
+            <td>emt 1201</td>
+            <td>Engineering math II</td>
             <td>Clara Julia Batanda(Ms.)</td>
+            <td rowspan='5'>4</td>
           </tr>
           <tr>
-            <td>ele 1121</td>
-            <td>Circuit Analysis 1</td>
-            <td>Emmanuel Miyingo (Dr.)</td>
+            <td>2</td>
+            <td>CMP 1221</td>
+            <td>Fundamentals of Computer Networks</td>
+            <td>Ms. Agatha Turyagyenda</td>
           </tr>
           <tr>
-            <td>CMP 1103</td>
-            <td>Information &amp; Communication Technology</td>
-            <td>Agatha Turyagyenda (Ms.)</td>
-          </tr>
-          <tr class="del">
-            <td>bbi 1104</td>
-            <td>Biomedical Engineering Profession 1</td>
-            <td>Robert Ssekitoleko (Dr.), Shirley Mbabazi(Ms.)</td>
+            <td>3</td>
+            <td>CMP 1201</td>
+            <td>Computer Programming Fundamentals</td>
+            <td>Dr. Andrew Katumba</td>
           </tr>
           <tr>
-            <td>tec 1121</td>
-            <td>Fundamentals of Engineering</td>
-            <td>Jane Namaganda Kiyimba (Dr.)</td>
+            <td>4</td>
+            <td>ELE 1201</td>
+            <td>Introduction to Digital Electronics</td>
+            <td>Dr. Edwin Mugume</td>
           </tr>
           <tr>
-            <td>ele 1102</td>
-            <td>Physical Electronics</td>
-            <td>Paul Bogere (Dr.)</td>
-          </tr>
-          <tr>
-            <td>unv 1101</td>
-            <td>Communication Skills</td>
-            <td>Service(Dr. Sylvia Nahayo)</td>
+            <td>5</td>
+            <td>ele 1202</td>
+            <td>Electrical Materials</td>
+            <td>Dr. Tonny Ssettumba</td>
           </tr>
           <tr class="eeLabs">
-            <td>ee labs <span class="visuallyHidden"> - room 140</span></td>
+            <td>6</td>
+            <td>ELE LABS</td>
             <td>Electrical / Electronic Labs</td>
-            <td>Robert Gitta (Dr.)</td>
+            <td>Mr. Phillip Mujasi</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -492,96 +451,6 @@
       </table>
     </section>
 
-    <section class="tab unit-score current">
-      <h2>Courses unit scores</h2>
-      <h3>semester I</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Code</th>
-            <th>Course</th>
-            <th>Course Units</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">ELE1121</td>
-            <td>Circuit Analysis 1</td>
-            <td rowspan="5">4</td>
-          </tr>
-          <tr>
-            <td>Electronic / Electrical Labs</td>
-          </tr>
-          <tr>
-            <td>ELE1102</td>
-            <td>Physical Electronics</td>
-          </tr>
-          <tr>
-            <td>EMT1101</td>
-            <td>Engineering Math 1</td>
-          </tr>
-          <tr>
-            <td>CMP1103</td>
-            <td>Information and Communication Technology</td>
-          </tr>
-          <tr>
-            <td>TEC1121</td>
-            <td>Fundamentals of Engineering</td>
-            <td rowspan="2">3</td>
-          </tr>
-          <tr>
-            <td>UNV1001</td>
-            <td>Communication Skills</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>semester II core [5]</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>s/n</th>
-            <th>Code</th>
-            <th>Course</th>
-            <th>Course Units</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>EMT1201</td>
-            <td>Engineering Mathematics II</td>
-            <td rowspan="5">4</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>ELE1202</td>
-            <td>Electrical Materials</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>CMP1221</td>
-            <td>Fundamentals of computer networks</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>CMP1201</td>
-            <td>Computer Programming Fundamentals</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>ELE1201</td>
-            <td>Introduction to Digital Electronics</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>EE Labs</td>
-            <td>Electrical and Electronic Lab</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
 
     <section class="tab fees">
       <h2>YEAR 1 Fee Structure</h2>
