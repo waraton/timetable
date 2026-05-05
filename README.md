@@ -22,13 +22,24 @@ An interactive, client-side academic timetable web application. The project cont
 
 ## How to use
 
+### Clone the repo
+
 1. Clone or download the repository.
+
+    ```bash
+    git clone https://github.com/waraton/timetable.git
+    ```
+
 2. Open `index.html` in a modern web browser (Chrome, Firefox, Edge, Safari).
 3. The timetable highlights current items automatically. Use the navigation buttons to switch sections (Timetable, Lecturers, Activities, Grading, Fees, Exams).
 
+### Use the repo page
+
+Go to <https://waraton.github.io/timetable> to preview the.
+
 ## Browser support
 
-Requires a modern browser with support for ES6 JavaScript, CSS Grid, and localStorage. Internet Explorer is not supported.
+Requires a modern browser with support for ES6 JavaScript, CSS Grid, and `localStorage`. Internet Explorer is not supported.
 
 ## Customization
 
@@ -48,5 +59,3 @@ Creative Commons Zero v1.0 Universal (CC0)
 ## Author
 
 waraton (<https://github.com/waraton>)
-
-Last updated: 2026-05-05
