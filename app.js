@@ -93,59 +93,6 @@ emt.forEach((e) => {
   }, 25525);
 });
 
-const date = document.getElementById("date");
-const time = document.getElementById("time");
-const tag = document.getElementById("tag");
-const notes = document.getElementById("notes");
-const add = document.getElementById("add");
-
-add.addEventListener(`click`, (e) => {
-  e.preventDefault();
-  const nowId = new Date();
-  const store = [
-    nowId.toLocaleDateString(),
-    time.value,
-    tag.value,
-    notes.value,
-  ];
-  let state = store.filter((w) => w.length === 0).length === 0;
-  if (state) {
-    localStorage.setItem(nowId.toISOString(), JSON.stringify(store));
-    loadLocal();
-  }
-});
-
-function loadLocal() {
-  for (const key in localStorage) {
-    if (
-      Object.hasOwnProperty.call(localStorage, key) &&
-      !document.getElementById(key) &&
-      new Date(key).valueOf()
-    ) {
-      const element = JSON.parse(localStorage[key]);
-      [a, b, c, d] = element;
-      document.querySelector(`.dis`).innerHTML += `
-      <li>
-      <span>${a}</span>
-      <span>${b}</span>
-      <span>${c}</span>
-      <span>${d}</span>
-      <span del id=${key}>x</span>
-      </li>
-      `;
-    }
-  }
-}
-loadLocal();
-
-document.querySelectorAll("[del]").forEach((del) => {
-  del.addEventListener("click", (e) => {
-    e.preventDefault();
-    localStorage.removeItem(e.target.id);
-    e.target.parentElement.style.display = "none";
-  });
-});
-
 const buttons = document.querySelectorAll(`nav button`);
 const tabs = document.querySelectorAll(`section.tab`);
 function removeCurrent() {
@@ -210,16 +157,16 @@ function counter() {
   const SEtime = () => {
     const ele1 = document.querySelector('.exams tbody tr:first-child')
     const ele2 = document.querySelector('.exams tbody tr:last-child')
-    ele1.querySelectorAll('td').forEach((el,ind,arr)=>{
+    ele1.querySelectorAll('td').forEach((el, ind, arr) => {
       el.parentElement.dataset.start = arr[1].textContent + ' ' + arr[3].textContent
     })
-    ele2.querySelectorAll('td').forEach((el,ind,arr)=>{
+    ele2.querySelectorAll('td').forEach((el, ind, arr) => {
       el.parentElement.dataset.end = arr[1].textContent + ' ' + arr[4].textContent
     })
     return [ele1.dataset.start, ele2.dataset.end]
   }
 
-  document.querySelectorAll('.exams table tbody tr').forEach((e,f,g)=>{
+  document.querySelectorAll('.exams table tbody tr').forEach((e, f, g) => {
     e.querySelectorAll(`td`).forEach((td, ind, arr) => {
       startTime = new Date(`${arr[1].textContent}  ${arr[3].textContent}`)
       end = new Date(`${arr[1].textContent}  ${arr[4].textContent}`)
@@ -247,13 +194,13 @@ function timer(fun) {
     ['minutes', `${Math.floor(ms / 1000 / 60) % 60} min`],
     ['seconds', `${Math.floor(ms / 1000) % 60} sec`],
     ['percentage', `${(
-        (ms / tim).toFixed(4)
-      ) * 100} % ${(
-        (used / tim).toFixed(4)
-      ) * 100} %`]
+      (ms / tim).toFixed(4)
+    ) * 100} % ${(
+      (used / tim).toFixed(4)
+    ) * 100} %`]
   ]
 
-  data.forEach((row)=>{
+  data.forEach((row) => {
     document.querySelector(`[${row[0]}]`).textContent = row[1]
   })
 
