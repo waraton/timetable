@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <script src="todo.js" defer></script>
+  <title>TODO application</title>
+</head>
+
+<body>
+  <main>
+
+    <h2>TODO Manager</h2>
+    <form>
+      <fieldset>
+        <legend>ADD TODO</legend>
+
+        <ul>
+          <li>
+            <label for="date">Date:</label>
+          <input type="date" id="date">
+        </li>
+        <li>
+          <label for="time">Time:</label>
+          <input type="time" id="time">
+        </li>
+        <li>
+          <label for="tag">Tag:</label>
+          <input type="text" id="tag" list="tags" placeholder="Add a tag..." autocomplete="off">
+          <datalist id="tags">
+            <option value="Lectures">Lectures</option>
+            <option value="School">School</option>
+            <option value="Church">Church</option>
+            <option value="Class">Class</option>
+          </datalist>
+        </li>
+        <li al>
+          <label for="notes">Notes:</label>
+          <textarea placeholder="Write important here..." id=notes rows="3"></textarea>
+        </li>
+        <li al><button type="submit" id="add">Add</button></li>
+      </ul>
+    </fieldset>
+  </form>
+
+  <ol class="dis">
+    <li>
+      <span>Date</span>
+      <span>Time</span>
+      <span>Tag</span>
+      <span>Note</span>
+    </li>
+  </ol>
+  <a href="./index.html">Go to timetable</a>
+</main>
+</body>
+
+</html>
