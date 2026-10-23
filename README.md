@@ -19,6 +19,9 @@ An interactive, client-side academic timetable web application. The project cont
 - style.css — Styling and layout rules.
 - app.js — Interactivity: highlighting, exam timer, localStorage activity management, tab navigation, and grading coloring logic.
 - README.md — This file.
+- todo.html — Isolated todo/activities structure
+- todo.css — Styling and layout for todo
+- todo.js — Interactivity for todos
 
 ## How to use
 
